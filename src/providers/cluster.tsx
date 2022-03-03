@@ -8,13 +8,13 @@ import { localStorageIsAvailable } from "utils";
 export function clusterApiUrl(cluster: string): string {
   switch (cluster) {
     case "mainnet-beta":
-      return "https://139.59.207.53:444";
+      return "https://sardischain.com:444";
     case "testnet":
-      return "https://139.59.207.53:444";
+      return "https://sardischain.com:444";
     case "devnet":
-      return "https://139.59.207.53:444";
+      return "https://sardischain.com:444";
     default:
-      return "https://139.59.207.53:444";
+      return "https://sardischain.com:444";
   }
 }
 
