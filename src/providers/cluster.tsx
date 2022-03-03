@@ -8,13 +8,13 @@ import { localStorageIsAvailable } from "utils";
 export function clusterApiUrl(cluster: string): string {
   switch (cluster) {
     case "mainnet-beta":
-      return "http://46.101.138.178:8899";
+      return "https://139.59.207.53:444";
     case "testnet":
-      return "http://46.101.138.178:8899";
+      return "https://139.59.207.53:444";
     case "devnet":
-      return "http://46.101.138.178:8899";
+      return "https://139.59.207.53:444";
     default:
-      return "http://46.101.138.178:8899";
+      return "https://139.59.207.53:444";
   }
 }
 
