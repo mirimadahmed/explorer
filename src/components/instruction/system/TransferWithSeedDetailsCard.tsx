@@ -58,7 +58,7 @@ export function TransferWithSeedDetailsCard(props: {
       </tr>
 
       <tr>
-        <td>Transfer Amount (SOL)</td>
+        <td>Transfer Amount (SRDS)</td>
         <td className="text-lg-right">
           <SolBalance lamports={info.lamports} />
         </td>

@@ -123,13 +123,13 @@ function OverviewCard({
           </td>
         </tr>
         <tr>
-          <td>Balance (SOL)</td>
+          <td>Balance (SRDS)</td>
           <td className="text-lg-right text-uppercase">
             <SolBalance lamports={account.lamports || 0} />
           </td>
         </tr>
         <tr>
-          <td>Rent Reserve (SOL)</td>
+          <td>Rent Reserve (SRDS)</td>
           <td className="text-lg-right">
             <SolBalance lamports={stakeAccount.meta.rentExemptReserve} />
           </td>
@@ -188,7 +188,7 @@ function DelegationCard({
         {stake && (
           <>
             <tr>
-              <td>Delegated Stake (SOL)</td>
+              <td>Delegated Stake (SRDS)</td>
               <td className="text-lg-right">
                 <SolBalance lamports={stake.delegation.stake} />
               </td>
@@ -197,14 +197,14 @@ function DelegationCard({
             {activation && (
               <>
                 <tr>
-                  <td>Active Stake (SOL)</td>
+                  <td>Active Stake (SRDS)</td>
                   <td className="text-lg-right">
                     <SolBalance lamports={activation.active} />
                   </td>
                 </tr>
 
                 <tr>
-                  <td>Inactive Stake (SOL)</td>
+                  <td>Inactive Stake (SRDS)</td>
                   <td className="text-lg-right">
                     <SolBalance lamports={activation.inactive} />
                   </td>

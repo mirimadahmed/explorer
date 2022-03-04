@@ -296,7 +296,7 @@ function StatusCard({
 
         {fee && (
           <tr>
-            <td>Fee (SOL)</td>
+            <td>Fee (SRDS)</td>
             <td className="text-lg-right">
               <SolBalance lamports={fee} />
             </td>
@@ -401,8 +401,8 @@ function AccountsCard({
             <tr>
               <th className="text-muted">#</th>
               <th className="text-muted">Address</th>
-              <th className="text-muted">Change (SOL)</th>
-              <th className="text-muted">Post Balance (SOL)</th>
+              <th className="text-muted">Change (SRDS)</th>
+              <th className="text-muted">Post Balance (SRDS)</th>
               <th className="text-muted">Details</th>
             </tr>
           </thead>
