@@ -5,17 +5,17 @@ export function displayTimestamp(
   const expireDate = new Date(unixTimestamp);
   const dateString = new Intl.DateTimeFormat("en-US", {
     year: "numeric",
-    month: "short",
+    month: "numeric",
     day: "numeric",
   }).format(expireDate);
   const timeString = new Intl.DateTimeFormat("en-US", {
     hour: "numeric",
     minute: "numeric",
-    second: "numeric",
+    // second: "numeric",
     hourCycle: "h23",
-    timeZoneName: shortTimeZoneName ? "short" : "long",
+    // timeZoneName: shortTimeZoneName ? "short" : "long",
   }).format(expireDate);
-  return `${dateString} at ${timeString}`;
+  return `${dateString}:${timeString}`;
 }
 
 export function displayTimestampUtc(
@@ -48,9 +48,9 @@ export function displayTimestampWithoutDate(
   const timeString = new Intl.DateTimeFormat("en-US", {
     hour: "numeric",
     minute: "numeric",
-    second: "numeric",
+    // second: "numeric",
     hourCycle: "h23",
-    timeZoneName: shortTimeZoneName ? "short" : "long",
+    // timeZoneName: shortTimeZoneName ? "short" : "long",
   }).format(expireDate);
   return timeString;
 }
