@@ -64,7 +64,7 @@ export function CancelOrderDetailsCard(props: {
       </tr>
 
       <tr>
-        <td>Open Orders Slot</td>
+        <td>Open Orders Block</td>
         <td className="text-lg-right">{info.openOrdersSlot}</td>
       </tr>
 

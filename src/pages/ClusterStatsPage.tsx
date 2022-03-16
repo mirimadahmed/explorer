@@ -27,7 +27,7 @@ export function ClusterStatsPage() {
         <div className="card-header">
           <div className="row align-items-center">
             <div className="col">
-              <h4 className="card-header-title">Live Cluster Stats</h4>
+              <h4 className="card-header-title">Live Network Stats</h4>
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@ function StatsCardBody() {
   return (
     <TableCardBody>
       <tr>
-        <td className="w-100">Slot</td>
+        <td className="w-100">Block</td>
         <td className="text-lg-right text-monospace">
           <Slot slot={absoluteSlot} link />
         </td>
@@ -234,18 +234,18 @@ function StatsCardBody() {
       )}
       {blockTime && (
         <tr>
-          <td className="w-100">Cluster time</td>
+          <td className="w-100">Network time</td>
           <td className="text-lg-right text-monospace">
             {displayTimestampUtc(blockTime)}
           </td>
         </tr>
       )}
       <tr>
-        <td className="w-100">Slot time (1min average)</td>
+        <td className="w-100">Block time (1min average)</td>
         <td className="text-lg-right text-monospace">{averageSlotTime}ms</td>
       </tr>
       <tr>
-        <td className="w-100">Slot time (1hr average)</td>
+        <td className="w-100">Block time (1hr average)</td>
         <td className="text-lg-right text-monospace">{hourlySlotTime}ms</td>
       </tr>
     </TableCardBody>

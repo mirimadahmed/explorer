@@ -23,7 +23,11 @@ ul.log-messages {
 
 .navbar {
   border-bottom: 1px solid $card-outline-color;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
+
 
 .search-bar__placeholder {
   color: $input-placeholder-color !important;

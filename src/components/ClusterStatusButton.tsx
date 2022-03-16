@@ -11,7 +11,7 @@ export function ClusterStatusBanner() {
 
   return (
     <div className="container d-md-none my-4">
-      <div onClick={() => setShow(true)}>
+      <div onClick={() => setShow(false)}>
         <Button />
       </div>
     </div>
@@ -22,7 +22,7 @@ export function ClusterStatusButton() {
   const [, setShow] = useClusterModal();
 
   return (
-    <div onClick={() => setShow(true)}>
+    <div onClick={() => setShow(false)}>
       <Button />
     </div>
   );
@@ -43,7 +43,8 @@ function Button() {
       return (
         <span className={btnClasses("primary")}>
           <span className="fe fe-check-circle mr-2"></span>
-          {statusName}
+          {/* {statusName} */}
+          Testnet Beta
         </span>
       );
 
@@ -55,7 +56,8 @@ function Button() {
             role="status"
             aria-hidden="true"
           ></span>
-          {statusName}
+          Testnet
+          {/* {statusName} */}
         </span>
       );
 
@@ -63,7 +65,7 @@ function Button() {
       return (
         <span className={btnClasses("danger")}>
           <span className="fe fe-alert-circle mr-2"></span>
-          {statusName}
+          {/* {statusName} */}
         </span>
       );
   }

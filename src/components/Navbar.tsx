@@ -12,7 +12,7 @@ export function Navbar() {
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container">
         <Link to={clusterPath("/")}>
-          <img src={Logo} width="250" alt="Solana Explorer" />
+          <img src={Logo} width="150" alt="Sardis Explorer" style={{width:"50%"}} />
         </Link>
 
         <button
@@ -31,7 +31,7 @@ export function Navbar() {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <NavLink className="nav-link" to={clusterPath("/")} exact>
-                Cluster Stats
+                Network Stats
               </NavLink>
             </li>
             <li className="nav-item">
