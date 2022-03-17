@@ -92,7 +92,7 @@ function renderDetails<T>(
 
       attributes.push(
         <tr key="vote-slots">
-          <td>Slots</td>
+          <td>Blocks</td>
           <td className="text-lg-right text-monospace">
             <pre className="d-inline-block text-left mb-0">
               {value.slots.join("\n")}

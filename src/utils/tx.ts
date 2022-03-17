@@ -231,8 +231,8 @@ export const SYSVAR_IDS = {
   SysvarRecentB1ockHashes11111111111111111111: "Sysvar: Recent Blockhashes",
   [SYSVAR_RENT_PUBKEY.toBase58()]: "Sysvar: Rent",
   [SYSVAR_REWARDS_PUBKEY.toBase58()]: "Sysvar: Rewards",
-  SysvarS1otHashes111111111111111111111111111: "Sysvar: Slot Hashes",
-  SysvarS1otHistory11111111111111111111111111: "Sysvar: Slot History",
+  SysvarS1otHashes111111111111111111111111111: "Sysvar: Block Hashes",
+  SysvarS1otHistory11111111111111111111111111: "Sysvar: Block History",
   [SYSVAR_STAKE_HISTORY_PUBKEY.toBase58()]: "Sysvar: Stake History",
   Sysvar1nstructions1111111111111111111111111: "Sysvar: Instructions",
 };

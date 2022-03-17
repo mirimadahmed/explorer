@@ -26,9 +26,11 @@
   &:not(:disabled):not(.disabled):active:focus,
   &:not(:disabled):not(.disabled).active:focus,
   .show > &.dropdown-toggle {
-    background-color: $black-dark;
+    // background-color: $black-dark;
+    background-color: #008cff;
     border-color: $gray-700-dark;
-    color: $white;
+    // color: $white;
+    color: #fff;
   }
 }
 

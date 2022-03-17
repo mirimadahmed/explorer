@@ -92,7 +92,7 @@ export function TransactionHistoryCard({ pubkey }: { pubkey: PublicKey }) {
           <thead>
             <tr>
               <th className="text-muted w-1">Transaction Signature</th>
-              <th className="text-muted w-1">Slot</th>
+              <th className="text-muted w-1">Blocks</th>
               {hasTimestamps && <th className="text-muted w-1">Age</th>}
               <th className="text-muted">Result</th>
             </tr>

@@ -14,16 +14,20 @@
   border-color: $gray-300;
 
   @include hover-focus {
-    background-color: $gray-100;
-    border-color: $gray-400;
+    // background-color: $gray-100;
+    // border-color: $gray-400;
+    background-color:#008cff;
   }
 }
 
 .btn-group-toggle .btn-white:not(:disabled):not(.disabled):active,
 .btn-group-toggle .btn-white:not(:disabled):not(.disabled).active {
-  background-color: $input-bg;
+  // background-color: $input-bg;
+  // border-color: $input-focus-border-color;
+  // color: $primary;
+  background-color:#008cff !important;
   border-color: $input-focus-border-color;
-  color: $primary;
+  color: #fff !important;
 }
 
 .btn-group-toggle .btn-white:focus,
