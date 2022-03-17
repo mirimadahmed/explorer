@@ -14,12 +14,13 @@ import { StatsNotReady } from "pages/ClusterStatsPage";
 
 export function TpsCard() {
   return (
-    <div className="card">
-      <div className="card-header">
-        <h4 className="card-header-title">Live Transaction Stats</h4>
-      </div>
-      <TpsCardBody />
-    </div>
+    <></>
+    // <div className="card">
+    //   <div className="card-header">
+    //     <h4 className="card-header-title">Live Transaction Stats</h4>
+    //   </div>
+    //   <TpsCardBody />
+    // </div>
   );
 }
 
