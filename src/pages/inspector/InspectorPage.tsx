@@ -226,7 +226,7 @@ function PermalinkView({
   const location = useLocation();
   const transaction = details?.data?.raw;
   const reset = React.useCallback(() => {
-    history.push({ ...location, pathname: "/tx/inspector" });
+    history.push({ ...location, pathname: "/tx/audit" });
   }, [history, location]);
 
   // Fetch details on load

@@ -40,7 +40,7 @@ export function Navbar() {
               </NavLink>
             </li> */}
             <li className="nav-item">
-              <NavLink className="nav-link" to={clusterPath("/tx/inspector")}>
+              <NavLink className="nav-link" to={clusterPath("/tx/audti")}>
               Transaction Auditor
               </NavLink>
             </li>
