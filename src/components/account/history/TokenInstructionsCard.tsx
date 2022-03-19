@@ -152,7 +152,7 @@ export function TokenInstructionsCard({ pubkey }: { pubkey: PublicKey }) {
         <table className="table table-sm table-nowrap card-table">
           <thead>
             <tr>
-              <th className="text-muted w-1">Transaction Signature</th>
+              <th className="text-muted w-1">Tx Hash</th>
               {hasTimestamps && <th className="text-muted">Age</th>}
               <th className="text-muted">Instruction</th>
               <th className="text-muted">Program</th>

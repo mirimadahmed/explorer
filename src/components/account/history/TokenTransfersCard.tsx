@@ -225,7 +225,7 @@ export function TokenTransfersCard({ pubkey }: { pubkey: PublicKey }) {
         <table className="table table-sm table-nowrap card-table">
           <thead>
             <tr>
-              <th className="text-muted">Transaction Signature</th>
+              <th className="text-muted">Tx Hash</th>
               {hasTimestamps && <th className="text-muted">Age</th>}
               <th className="text-muted">Source</th>
               <th className="text-muted">Destination</th>

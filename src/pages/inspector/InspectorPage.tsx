@@ -199,7 +199,7 @@ export function TransactionInspectorPage({
     <div className="container mt-4">
       <div className="header">
         <div className="header-body">
-          <h2 className="header-title">Transaction Inspector</h2>
+          <h2 className="header-title">Transaction Auditor</h2>
         </div>
       </div>
       {signature ? (

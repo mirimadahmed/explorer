@@ -19,6 +19,12 @@ export function TopAccountsCard() {
   const [showDropdown, setDropdown] = React.useState(false);
   const filter = useQueryFilter();
 
+  React.useEffect(() => {
+    
+      fetchRichList();
+    
+  }, []);
+
   if (typeof supply !== "object") return null;
 
   if (richList === Status.Disconnected) {

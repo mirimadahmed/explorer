@@ -9,7 +9,8 @@ import {
 } from 'providers/stats/solanaClusterStats'
 import { abbreviatedNumber, lamportsToSol, slotsToHumanString } from 'utils'
 import { ClusterStatus, useCluster } from 'providers/cluster'
-import { TpsCard } from 'components/TpsCard'
+import { TpsCard } from 'components/TpsCard';
+import { TopAccountsCard } from "components/TopAccountsCard";
 import { displayTimestampWithoutDate, displayTimestampUtc } from 'utils/date'
 import { Status, useFetchSupply, useSupply } from 'providers/supply'
 import { ErrorCard } from 'components/common/ErrorCard'
@@ -33,7 +34,8 @@ export function ClusterStatsPage() {
         </div>
         <StatsCardBody />
       </div>
-      <TpsCard />
+      {/* <TpsCard /> */}
+      <TopAccountsCard />
     </div>
   )
 }
@@ -180,6 +182,7 @@ function displayLamports(value: number) {
 
 function StatsCardBody() {
   const dashboardInfo = useDashboardInfo()
+  // console.log({dashboardInfo});
   const performanceInfo = usePerformanceInfo()
   const { setActive } = useStatsProvider()
   const { cluster } = useCluster()

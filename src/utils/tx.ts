@@ -33,17 +33,17 @@ export enum PROGRAM_NAMES {
   SECP256K1 = "Secp256k1 Program",
 
   // spl
-  ASSOCIATED_TOKEN = "Associated Token Program",
-  FEATURE_PROPOSAL = "Feature Proposal Program",
-  LENDING = "Lending Program",
-  MEMO = "Memo Program",
-  MEMO_2 = "Memo Program v2",
-  NAME = "Name Service Program",
-  STAKE_POOL = "Stake Pool Program",
-  SWAP = "Swap Program",
-  TOKEN = "Token Program",
-  TOKEN_METADATA = "Token Metadata Program",
-  TOKEN_VAULT = "Token Vault Program",
+  // ASSOCIATED_TOKEN = "Associated Token Program",
+  // FEATURE_PROPOSAL = "Feature Proposal Program",
+  // LENDING = "Lending Program",
+  // MEMO = "Memo Program",
+  // MEMO_2 = "Memo Program v2",
+  // NAME = "Name Service Program",
+  // STAKE_POOL = "Stake Pool Program",
+  // SWAP = "Swap Program",
+  // TOKEN = "Token Program",
+  // TOKEN_METADATA = "Token Metadata Program",
+  // TOKEN_VAULT = "Token Vault Program",
 
   // other
   ACUMEN = "Acumen Program",
@@ -100,17 +100,17 @@ export const PROGRAM_DEPLOYMENTS = {
   [PROGRAM_NAMES.SECP256K1]: ALL_CLUSTERS,
 
   // spl
-  [PROGRAM_NAMES.ASSOCIATED_TOKEN]: ALL_CLUSTERS,
-  [PROGRAM_NAMES.FEATURE_PROPOSAL]: ALL_CLUSTERS,
-  [PROGRAM_NAMES.LENDING]: LIVE_CLUSTERS,
-  [PROGRAM_NAMES.MEMO]: ALL_CLUSTERS,
-  [PROGRAM_NAMES.MEMO_2]: ALL_CLUSTERS,
-  [PROGRAM_NAMES.NAME]: LIVE_CLUSTERS,
-  [PROGRAM_NAMES.STAKE_POOL]: [Cluster.Devnet, Cluster.Testnet] as Cluster[],
-  [PROGRAM_NAMES.SWAP]: LIVE_CLUSTERS,
-  [PROGRAM_NAMES.TOKEN]: ALL_CLUSTERS,
-  [PROGRAM_NAMES.TOKEN_METADATA]: LIVE_CLUSTERS,
-  [PROGRAM_NAMES.TOKEN_VAULT]: LIVE_CLUSTERS,
+  // [PROGRAM_NAMES.ASSOCIATED_TOKEN]: ALL_CLUSTERS,
+  // [PROGRAM_NAMES.FEATURE_PROPOSAL]: ALL_CLUSTERS,
+  // [PROGRAM_NAMES.LENDING]: LIVE_CLUSTERS,
+  // [PROGRAM_NAMES.MEMO]: ALL_CLUSTERS,
+  // [PROGRAM_NAMES.MEMO_2]: ALL_CLUSTERS,
+  // [PROGRAM_NAMES.NAME]: LIVE_CLUSTERS,
+  // [PROGRAM_NAMES.STAKE_POOL]: [Cluster.Devnet, Cluster.Testnet] as Cluster[],
+  // [PROGRAM_NAMES.SWAP]: LIVE_CLUSTERS,
+  // [PROGRAM_NAMES.TOKEN]: ALL_CLUSTERS,
+  // [PROGRAM_NAMES.TOKEN_METADATA]: LIVE_CLUSTERS,
+  // [PROGRAM_NAMES.TOKEN_VAULT]: LIVE_CLUSTERS,
 
   // other
   [PROGRAM_NAMES.ACUMEN]: MAINNET_ONLY,
@@ -163,17 +163,17 @@ export const PROGRAM_NAME_BY_ID = {
   [Secp256k1Program.programId.toBase58()]: PROGRAM_NAMES.SECP256K1,
 
   // spl
-  ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL: PROGRAM_NAMES.ASSOCIATED_TOKEN,
-  Feat1YXHhH6t1juaWF74WLcfv4XoNocjXA6sPWHNgAse: PROGRAM_NAMES.FEATURE_PROPOSAL,
-  LendZqTs7gn5CTSJU1jWKhKuVpjJGom45nnwPb2AMTi: PROGRAM_NAMES.LENDING,
-  Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo: PROGRAM_NAMES.MEMO,
-  MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr: PROGRAM_NAMES.MEMO_2,
-  namesLPneVptA9Z5rqUDD9tMTWEJwofgaYwp8cawRkX: PROGRAM_NAMES.NAME,
-  SPoo1xuN9wGpxNjGnPNbRPtpQ7mHgKM8d9BeFC549Jya: PROGRAM_NAMES.STAKE_POOL,
-  SwaPpA9LAaLfeLi3a68M4DjnLqgtticKg6CnyNwgAC8: PROGRAM_NAMES.SWAP,
-  TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA: PROGRAM_NAMES.TOKEN,
-  metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s: PROGRAM_NAMES.TOKEN_METADATA,
-  vau1zxA2LbssAUEF7Gpw91zMM1LvXrvpzJtmZ58rPsn: PROGRAM_NAMES.TOKEN_VAULT,
+  // ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL: PROGRAM_NAMES.ASSOCIATED_TOKEN,
+  // Feat1YXHhH6t1juaWF74WLcfv4XoNocjXA6sPWHNgAse: PROGRAM_NAMES.FEATURE_PROPOSAL,
+  // LendZqTs7gn5CTSJU1jWKhKuVpjJGom45nnwPb2AMTi: PROGRAM_NAMES.LENDING,
+  // Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo: PROGRAM_NAMES.MEMO,
+  // MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr: PROGRAM_NAMES.MEMO_2,
+  // namesLPneVptA9Z5rqUDD9tMTWEJwofgaYwp8cawRkX: PROGRAM_NAMES.NAME,
+  // SPoo1xuN9wGpxNjGnPNbRPtpQ7mHgKM8d9BeFC549Jya: PROGRAM_NAMES.STAKE_POOL,
+  // SwaPpA9LAaLfeLi3a68M4DjnLqgtticKg6CnyNwgAC8: PROGRAM_NAMES.SWAP,
+  // TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA: PROGRAM_NAMES.TOKEN,
+  // metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s: PROGRAM_NAMES.TOKEN_METADATA,
+  // vau1zxA2LbssAUEF7Gpw91zMM1LvXrvpzJtmZ58rPsn: PROGRAM_NAMES.TOKEN_VAULT,
 
   // other
   C64kTdg1Hzv5KoQmZrQRcm2Qz7PkxtFBgw7EpFhvYn8W: PROGRAM_NAMES.ACUMEN,
@@ -311,24 +311,24 @@ export function intoTransactionInstruction(
   });
 }
 
-export function intoParsedTransaction(tx: Transaction): ParsedTransaction {
-  const message = tx.compileMessage();
-  return {
-    signatures: tx.signatures.map((value) =>
-      bs58.encode(value.signature as any)
-    ),
-    message: {
-      accountKeys: message.accountKeys.map((key, index) => ({
-        pubkey: key,
-        signer: tx.signatures.some(({ publicKey }) => publicKey.equals(key)),
-        writable: message.isAccountWritable(index),
-      })),
-      instructions: message.instructions.map((ix) => ({
-        programId: message.accountKeys[ix.programIdIndex],
-        accounts: ix.accounts.map((index) => message.accountKeys[index]),
-        data: ix.data,
-      })),
-      recentBlockhash: message.recentBlockhash,
-    },
-  };
-}
+// export function intoParsedTransaction(tx: Transaction): ParsedTransaction {
+//   const message = tx.compileMessage();
+//   return {
+//     signatures: tx.signatures.map((value) =>
+//       bs58.encode(value.signature as any)
+//     ),
+//     message: {
+//       accountKeys: message.accountKeys.map((key, index) => ({
+//         pubkey: key,
+//         signer: tx.signatures.some(({ publicKey }) => publicKey.equals(key)),
+//         writable: message.isAccountWritable(index),
+//       })),
+//       instructions: message.instructions.map((ix) => ({
+//         programId: message.accountKeys[ix.programIdIndex],
+//         accounts: ix.accounts.map((index) => message.accountKeys[index]),
+//         data: ix.data,
+//       })),
+//       recentBlockhash: message.recentBlockhash,
+//     },
+//   };
+// }

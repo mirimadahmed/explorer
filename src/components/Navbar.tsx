@@ -8,6 +8,10 @@ export function Navbar() {
   // TODO: use `collapsing` to animate collapsible navbar
   const [collapse, setCollapse] = React.useState(false);
 
+  const openWallet = () => {
+
+  }
+
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container">
@@ -34,15 +38,20 @@ export function Navbar() {
                 Network Stats
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link" to={clusterPath("/supply")}>
                 Supply
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink className="nav-link" to={clusterPath("/tx/inspector")}>
-                Inspector
+              Transaction Auditor
               </NavLink>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link url-link" href="https://sardis-wallet-icccu.ondigitalocean.app/" target="_blank" rel="noreferrer">
+              Sardis Wallet
+              </a>
             </li>
           </ul>
         </div>

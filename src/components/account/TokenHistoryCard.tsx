@@ -262,7 +262,7 @@ function TokenHistoryTable({ tokens }: { tokens: TokenInfoWithPubkey[] }) {
               <th className="text-muted">Result</th>
               <th className="text-muted">Token</th>
               <th className="text-muted">Instruction Type</th>
-              <th className="text-muted">Transaction Signature</th>
+              <th className="text-muted">Tx Hash</th>
             </tr>
           </thead>
           <tbody className="list">

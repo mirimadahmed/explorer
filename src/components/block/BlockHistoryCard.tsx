@@ -123,7 +123,7 @@ export function BlockHistoryCard({ block }: { block: BlockResponse }) {
             <tr>
               <th className="text-muted">#</th>
               <th className="text-muted">Result</th>
-              <th className="text-muted">Transaction Signature</th>
+              <th className="text-muted">Tx Hash</th>
               <th className="text-muted">Invoked Programs</th>
             </tr>
           </thead>

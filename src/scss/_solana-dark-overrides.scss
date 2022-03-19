@@ -23,9 +23,7 @@ ul.log-messages {
 
 .navbar {
   border-bottom: 1px solid $card-outline-color;
-  -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 0 0.75rem 1.5rem rgb(0 140 255 / 50%) !important;;
 }
 
 
