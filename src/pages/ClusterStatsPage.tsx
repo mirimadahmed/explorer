@@ -128,11 +128,11 @@ function StakingComponent() {
             <h4>Non - circulating</h4>
             
               <h1>
-                <em>0.00</em> /{" "}
-                <small>0.00</small>
+                <em>0.00</em> {" "}
+               
               </h1>
               <h5>
-              <em>{circulatingPercentage}%</em> is circulating
+              <em></em>
             </h5>
             
           </div>
@@ -225,14 +225,14 @@ function StatsCardBody() {
           <Slot slot={absoluteSlot} link />
         </td>
       </tr>
-      {blockHeight !== undefined && (
+      {/* {blockHeight !== undefined && (
         <tr>
           <td className="w-100">Block height</td>
           <td className="text-lg-right text-monospace">
             <Slot slot={blockHeight} />
           </td>
         </tr>
-      )}
+      )} */}
       {blockTime && (
         <tr>
           <td className="w-100">Network time</td>
