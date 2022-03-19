@@ -122,24 +122,22 @@ function StakingComponent() {
           </div>
         </div>
       </div>
-      {/* <div className="col-12 col-lg-4 col-xl">
+      <div className="col-12 col-lg-4 col-xl">
         <div className="card">
           <div className="card-body">
-            <h4>Active Stake</h4>
-            {activeStake && (
+            <h4>Non - circulating</h4>
+            
               <h1>
-                <em>{displayLamports(activeStake)}</em> /{" "}
-                <small>{displayLamports(supply.total)}</small>
+                <em>0.00</em> /{" "}
+                <small>0.00</small>
               </h1>
-            )}
-            {delinquentStakePercentage && (
               <h5>
-                Delinquent stake: <em>{delinquentStakePercentage}%</em>
-              </h5>
-            )}
+              <em>{circulatingPercentage}%</em> is circulating
+            </h5>
+            
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="col-12 col-lg-6 col-xl">
         <div className="card">
           <div className="card-body">
