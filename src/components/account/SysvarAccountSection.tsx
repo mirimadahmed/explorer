@@ -224,7 +224,7 @@ function SysvarAccountFeesCard({
         <AccountBalanceRow account={account} />
 
         <tr>
-          <td>Lamports Per Signature</td>
+          <td>Lamports Per Tranasction</td>
           <td className="text-lg-right">
             {sysvarAccount.info.feeCalculator.lamportsPerSignature}
           </td>

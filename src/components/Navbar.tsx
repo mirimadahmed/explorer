@@ -8,10 +8,6 @@ export function Navbar() {
   // TODO: use `collapsing` to animate collapsible navbar
   const [collapse, setCollapse] = React.useState(false);
 
-  const openWallet = () => {
-
-  }
-
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container">

@@ -2,41 +2,12 @@ import React from "react";
 import { Bar } from "react-chartjs-2";
 import CountUp from "react-countup";
 import {
-  usePerformanceInfo,
   PERF_UPDATE_SEC,
-  ClusterStatsStatus,
 } from "providers/stats/solanaClusterStats";
 import classNames from "classnames";
 import { TableCardBody } from "components/common/TableCardBody";
 import { ChartOptions, ChartTooltipModel } from "chart.js";
 import { PerformanceInfo } from "providers/stats/solanaPerformanceInfo";
-import { StatsNotReady } from "pages/ClusterStatsPage";
-
-export function TpsCard() {
-  return (
-    <></>
-    // <div className="card">
-    //   <div className="card-header">
-    //     <h4 className="card-header-title">Live Transaction Stats</h4>
-    //   </div>
-    //   <TpsCardBody />
-    // </div>
-  );
-}
-
-function TpsCardBody() {
-  const performanceInfo = usePerformanceInfo();
-
-  if (performanceInfo.status !== ClusterStatsStatus.Ready) {
-    return (
-      <StatsNotReady
-        error={performanceInfo.status === ClusterStatsStatus.Error}
-      />
-    );
-  }
-
-  return <TpsBarChart performanceInfo={performanceInfo} />;
-}
 
 type Series = "short" | "medium" | "long";
 const SERIES: Series[] = ["short", "medium", "long"];

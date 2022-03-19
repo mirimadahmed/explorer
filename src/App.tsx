@@ -40,7 +40,7 @@ function App() {
           />
           <Route
             exact
-            path={["/tx/inspector", "/tx/:signature/inspect"]}
+            path={["/tx/audit", "/tx/:signature/audit"]}
             render={({ match }) => (
               <TransactionInspectorPage signature={match.params.signature} />
             )}

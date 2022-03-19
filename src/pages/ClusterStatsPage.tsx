@@ -7,10 +7,9 @@ import {
   usePerformanceInfo,
   useStatsProvider,
 } from 'providers/stats/solanaClusterStats'
-import { abbreviatedNumber, lamportsToSol, slotsToHumanString } from 'utils'
+import { abbreviatedNumber, lamportsToSol } from 'utils'
 import { ClusterStatus, useCluster } from 'providers/cluster'
-import { TpsCard } from 'components/TpsCard';
-import { TopAccountsCard } from "components/TopAccountsCard";
+import { TopAccountsCard } from 'components/TopAccountsCard'
 import { displayTimestampWithoutDate, displayTimestampUtc } from 'utils/date'
 import { Status, useFetchSupply, useSupply } from 'providers/supply'
 import { ErrorCard } from 'components/common/ErrorCard'
@@ -45,7 +44,7 @@ function StakingComponent() {
   const supply = useSupply()
   const fetchSupply = useFetchSupply()
   const coinInfo = useCoinGecko('solana')
-  const { fetchVoteAccounts, voteAccounts } = useVoteAccounts()
+  const { fetchVoteAccounts } = useVoteAccounts()
 
   function fetchData() {
     fetchSupply()
@@ -57,26 +56,6 @@ function StakingComponent() {
       fetchData()
     }
   }, [status]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  const delinquentStake = React.useMemo(() => {
-    if (voteAccounts) {
-      return voteAccounts.delinquent.reduce(
-        (prev, current) => prev + current.activatedStake,
-        0,
-      )
-    }
-  }, [voteAccounts])
-
-  const activeStake = React.useMemo(() => {
-    if (voteAccounts && delinquentStake) {
-      return (
-        voteAccounts.current.reduce(
-          (prev, current) => prev + current.activatedStake,
-          0,
-        ) + delinquentStake
-      )
-    }
-  }, [voteAccounts, delinquentStake])
 
   if (supply === Status.Disconnected) {
     // we'll return here to prevent flicker
@@ -93,13 +72,6 @@ function StakingComponent() {
     (supply.circulating / supply.total) *
     100
   ).toFixed(1)
-
-  let delinquentStakePercentage
-  if (delinquentStake && activeStake) {
-    delinquentStakePercentage = ((delinquentStake / activeStake) * 100).toFixed(
-      1,
-    )
-  }
 
   let solanaInfo
   if (coinInfo.status === CoingeckoStatus.Success) {
@@ -123,18 +95,12 @@ function StakingComponent() {
         </div>
       </div>
       <div className="col-12 col-lg-4 col-xl">
-        <div className="card">
+        <div className="card" style={{ height: "85%" }}>
           <div className="card-body">
-            <h4>Non - circulating</h4>
-            
-              <h1>
-                <em>0.00</em> {" "}
-               
-              </h1>
-              <h5>
-              <em></em>
-            </h5>
-            
+            <h4>Non Circulating Supply</h4>
+            <h1>
+              <em>0.00</em>{' '}
+            </h1>
           </div>
         </div>
       </div>
@@ -208,14 +174,7 @@ function StatsCardBody() {
   } = dashboardInfo
   const hourlySlotTime = Math.round(1000 * avgSlotTime_1h)
   const averageSlotTime = Math.round(1000 * avgSlotTime_1min)
-  const { slotIndex, slotsInEpoch } = epochInfo
-  const currentEpoch = epochInfo.epoch.toString()
-  const epochProgress = ((100 * slotIndex) / slotsInEpoch).toFixed(1) + '%'
-  const epochTimeRemaining = slotsToHumanString(
-    slotsInEpoch - slotIndex,
-    hourlySlotTime,
-  )
-  const { blockHeight, absoluteSlot } = epochInfo
+  const { absoluteSlot } = epochInfo
 
   return (
     <TableCardBody>

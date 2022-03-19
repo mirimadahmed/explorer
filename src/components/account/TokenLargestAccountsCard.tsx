@@ -51,8 +51,10 @@ export function TokenLargestAccountsCard({ pubkey }: { pubkey: PublicKey }) {
   } else if (largestAccounts.status === FetchStatus.Fetching) {
     return <LoadingCard message="Refreshing largest accounts" />;
   }
-
-  const accounts = largestAccounts.data.largest;
+  console.log(largestAccounts.data.largest);
+  const accounts = largestAccounts.data.largest.filter(account => {
+    return account.address.toString() !== "So11111111111111111111111111111111111111112"
+  });
   if (accounts.length === 0) {
     return <ErrorCard text="No holders found" />;
   }
@@ -134,7 +136,7 @@ const renderAccountRow = (
         <span className="badge badge-soft-gray badge-pill">{index + 1}</span>
       </td>
       <td className="td">
-        <Address pubkey={account.address} link truncate />
+        {account.address}
       </td>
       <td>
         {account.owner && <Address pubkey={account.owner} link truncate />}

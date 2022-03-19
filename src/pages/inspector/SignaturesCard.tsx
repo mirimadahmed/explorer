@@ -95,7 +95,7 @@ function SignatureRow({
         {signature ? (
           <Signature signature={signature} truncateChars={40} />
         ) : (
-          "Missing Signature"
+          "Missing Transaction"
         )}
       </td>
       <td>

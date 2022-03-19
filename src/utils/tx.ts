@@ -11,7 +11,6 @@ import {
   SYSVAR_STAKE_HISTORY_PUBKEY,
   ParsedTransaction,
   TransactionInstruction,
-  Transaction,
   PartiallyDecodedInstruction,
   ParsedInstruction,
   Secp256k1Program,

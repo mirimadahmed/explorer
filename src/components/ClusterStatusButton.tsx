@@ -1,8 +1,6 @@
-import React from "react";
 import {
   useCluster,
   ClusterStatus,
-  Cluster,
   useClusterModal,
 } from "providers/cluster";
 
@@ -29,8 +27,7 @@ export function ClusterStatusButton() {
 }
 
 function Button() {
-  const { status, cluster, name, customUrl } = useCluster();
-  const statusName = cluster !== Cluster.Custom ? `${name}` : `${customUrl}`;
+  const { status } = useCluster();
 
   const btnClasses = (variant: string) => {
     return `btn d-block btn-${variant}`;

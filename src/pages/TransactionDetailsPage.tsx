@@ -209,11 +209,11 @@ function StatusCard({
       <div className="card-header align-items-center">
         <h3 className="card-header-title">Overview</h3>
         <Link
-          to={clusterPath(`/tx/${signature}/inspect`)}
+          to={clusterPath(`/tx/${signature}/audti`)}
           className="btn btn-white btn-sm mr-2"
         >
           <span className="fe fe-settings mr-2"></span>
-          Inspect
+          Audit
         </Link>
         {autoRefresh === AutoRefresh.Active ? (
           <span className="spinner-grow spinner-grow-sm"></span>
@@ -230,7 +230,7 @@ function StatusCard({
 
       <TableCardBody>
         <tr>
-          <td>Signature</td>
+          <td>Tx Hash</td>
           <td className="text-lg-right">
             <Signature signature={signature} alignRight />
           </td>
